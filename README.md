@@ -25,21 +25,6 @@ AI-powered agents to manage AWS services (EC2, S3, Lambda) using natural languag
    pip install boto3 phidata
    ```
 
----
-
-## 🔧 Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-repo/aws-agents.git
-   cd aws-agents
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
 ## 🔐 Configuration
 ### AWS Credentials Setup
 #### Option 1: Environment Variables (dotenv)
