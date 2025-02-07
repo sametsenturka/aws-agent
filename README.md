@@ -7,26 +7,27 @@ Built with `phidata` and `boto3`.
 ---
 
 ## 🚀 Features
-- **EC2 Management**: List, start, and stop EC2 instances.
-- **S3 Management**: List buckets, upload/download files, and manage objects.
-- **Lambda Management**: List and invoke Lambda functions.
-- **AI Integration**: Execute tasks using natural language commands.
+- EC2 Management: List, start, and stop EC2 instances.
+- S3 Management: List buckets, upload/download files, and manage objects.
+- Lambda Management: List and invoke Lambda functions.
+- AI Integration: Execute tasks using natural language commands.
 
 ---
 
 ## 📋 Prerequisites
 
-1. **Permissions Required**:
+1. Permissions Required:
      - `AmazonEC2FullAccess` (for EC2)
      - `AmazonS3FullAccess` (for S3)
      - `AWSLambda_FullAccess` (for Lambda)
 
-2. **Libraries**:
+2. Libraries:
    
    pip install boto3 phidata
    ```
 
 ## 🔐 Configuration
+
 ### AWS Credentials Setup
 #### Option 1: Environment Variables (dotenv)
 
