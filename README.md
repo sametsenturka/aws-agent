@@ -1,7 +1,8 @@
 ```markdown
 # AWS Agents with Phidata Framework
 
-AI-powered agents to manage AWS services (EC2, S3, Lambda) using natural language commands. Built with `phidata` and `boto3`.
+AI-powered agents to manage AWS services (EC2, S3, Lambda) using natural language commands.
+Built with `phidata` and `boto3`.
 
 ---
 
