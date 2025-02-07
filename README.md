@@ -4,7 +4,7 @@
 AI-powered agents to manage AWS services (EC2, S3, Lambda) using natural language commands.
 Built with `phidata` and `boto3`.
 
-I used Groq (llama-3.3-70b-versatile) for the Free API Key.
+I used Groq (llama-3.3-70b-versatile) which provides a Free API Key.
 
 ---
 
