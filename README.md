@@ -1,5 +1,4 @@
-```
-```
+``` ```
 ### AWS Agents with Phidata Framework
 ```
 
