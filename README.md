@@ -6,7 +6,6 @@ Built with `phidata` and `boto3`.
 
 I used Groq (llama-3.3-70b-versatile) which provides a Free API Key.
 
-
 ```
 ## 🚀 Features
 ```
