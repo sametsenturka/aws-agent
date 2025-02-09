@@ -1,5 +1,7 @@
 ```markdown
-# AWS Agents with Phidata Framework
+```
+### AWS Agents with Phidata Framework
+```
 
 AI-powered agents to manage AWS services (EC2, S3, Lambda) using natural language commands.
 Built with `phidata` and `boto3`.
@@ -9,7 +11,7 @@ I used Groq (llama-3.3-70b-versatile) which provides a Free API Key.
 ---
 
 ## 🚀 Features
-- EC2 Management: List, start, and stop EC2 instances.
+- EC2 Management: List, start and stop EC2 instances.
 - S3 Management: List buckets, upload/download files, and manage objects.
 - Lambda Management: List and invoke Lambda functions.
 - AI Integration: Execute tasks using natural language commands.
@@ -134,7 +136,7 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
 
 ## I AM NOT SURE  :(
 1. I am unsure about the `AmazonEC2FullAccess`, `AmazonS3FullAccess`, and `AmazonLambdaFullAccess` permissions.
-2. Full Access to some of your AWS services may not be a great idea.
+2. Full Access to some AWS services may not be a great idea.
 3. It's good for listing available things in your account.
 4. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
    
