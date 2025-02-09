@@ -1,4 +1,4 @@
-```markdown
+```
 ```
 ### AWS Agents with Phidata Framework
 ```
