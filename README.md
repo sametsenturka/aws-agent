@@ -37,13 +37,13 @@ I used Groq (llama-3.3-70b-versatile) which provides a Free API Key.
 # Linux/Mac
 export AWS_ACCESS_KEY_ID="AKIAXXXXXXXXXXXXXXXX"
 export AWS_SECRET_ACCESS_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-export AWS_REGION= YOUR REGION
+export AWS_REGION= "YOUR REGION"
 export GROQ_API_KEY = "YOUR_API_KEY"
 
 # Windows (PowerShell)
 $env:AWS_ACCESS_KEY_ID="AKIAXXXXXXXXXXXXXXXX"
 $env:AWS_SECRET_ACCESS_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-$env:AWS_REGION= YOUR REGION
+$env:AWS_REGION= "YOUR REGION"
 $env:GROQ_API_KEY= "YOUR_API_KEY"
 ```
 
@@ -53,7 +53,7 @@ Create or edit `~/.aws/credentials` (Linux/Mac) or `%USERPROFILE%\.aws\credentia
 [default]
 aws_access_key_id = AKIAXXXXXXXXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-region = YOUR_REGION
+region = "YOUR_REGION"
 ```
 
 ---
