@@ -8,22 +8,22 @@ I used Groq (llama-3.3-70b-versatile) which provides a Free API Key.
 
 ```
 ## 🚀 Features
-```
+
 - EC2 Management: List, start and stop EC2 instances.
 - S3 Management: List buckets, upload/download files
 - Lambda Management: List and invoke Lambda functions.
 - AI Integration: Execute tasks using natural language commands.
 
-```
+
 ## 📋 Prerequisites
-```
+
 1. Permissions Required:
      - `AmazonEC2FullAccess` (for EC2)
      - `AmazonS3FullAccess` (for S3)
      - `AWSLambda_FullAccess` (for Lambda)
 
 2. Libraries:
-   
+   ```bash
    pip install boto3 phidata
    ```
 
@@ -53,10 +53,8 @@ Create or edit `~/.aws/credentials` (Linux/Mac) or `%USERPROFILE%\.aws\credentia
 aws_access_key_id = AKIAXXXXXXXXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 region = "YOUR_REGION"
+
 ```
-
----
-
 ### Imports
 
 ```python
@@ -97,9 +95,6 @@ lambda_agent = Agent(
     show_tool_calls=True,
 )
 ```
-
----
-
 ## 💡 Examples
 
 ### EC2 Agent
