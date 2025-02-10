@@ -130,9 +130,12 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
 2. Full Access to some AWS services may not be a great idea.
 
 3. In more complex & indirect cases like:
-   "download this (if needed agents/tools are given) and load the summary to the related named S3 bucket)"
    
-4. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
+   ```python
+   "Download this (if needed tools are given) and load the summary to the related named S3 bucket"
+   ```
+   
+5. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
    
 
 - **Phidata Documentation**: [https://phidata.com](https://phidata.com)
