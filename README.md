@@ -126,8 +126,12 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
 
 ## I AM NOT SURE  :(
 1. I am unsure about the `AmazonEC2FullAccess`, `AmazonS3FullAccess`, and `AmazonLambdaFullAccess` permissions.
+
 2. Full Access to some AWS services may not be a great idea.
-3. It's good for listing available things in your account.
+
+3. In more complex & indirect cases like:
+   Prompt: "download this (if needed agents/tools are given) and load the summary to the related named S3 bucket)"
+   
 4. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
    
 
