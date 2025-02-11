@@ -9,7 +9,7 @@ class EC2Tool(Toolkit):
     name: str = "EC2Tool"
     description: str = "A tool for interacting with AWS EC2 instances"
 
-    def __init__(self, region_name: str = "us-east-1"):
+    def __init__(self, region_name: str = "YOUR_REGION"):
         super().__init__()
         self.client = boto3.client("ec2", region_name=region_name)
         self.register(self.list_instances)
