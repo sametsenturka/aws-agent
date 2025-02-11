@@ -10,7 +10,7 @@ class AWSLambdaTool(Toolkit):
     name: str = "AWSLambdaTool"
     description: str = "A tool for interacting with AWS Lambda functions"
 
-    def __init__(self, region_name: str = "us-east-1"):
+    def __init__(self, region_name: str = "YOUR_REGION"):
         super().__init__()
         self.client = boto3.client("lambda", region_name=region_name)
         self.register(self.list_functions)
