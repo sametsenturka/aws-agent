@@ -10,7 +10,7 @@ class S3Tool(Toolkit):
     name: str = "S3Tool"
     description: str = "A tool for interacting with AWS S3 buckets"
 
-    def __init__(self, region_name: str = "us-east-1"):
+    def __init__(self, region_name: str = "YOUR_REGION"):
         super().__init__()
         self.client = boto3.client("s3", region_name=region_name)
         self.register(self.list_buckets)
