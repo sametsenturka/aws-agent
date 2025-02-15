@@ -136,7 +136,9 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
    ```
    
    can cause unwanted/meant operations decided by Agent.
-   
+
+4. I have concerns about granting an agent full access to AWS service usage, as it might lead to unexpected costs.
+     
 5. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
    
 
