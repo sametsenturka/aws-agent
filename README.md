@@ -126,8 +126,6 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
 
 ## I AM NOT SURE  :( 
 
-Your Security Engineer won't like this repo, because;
-
 1. I am unsure about the `AmazonEC2FullAccess`, `AmazonS3FullAccess`, and `AmazonLambdaFullAccess` permissions.
 
 2. Full Access to some AWS services may not be a great idea.
@@ -142,7 +140,6 @@ Your Security Engineer won't like this repo, because;
      
 4. Idk when I take some advanced courses and keep learning, Some of these can be fixed.
 5. I have no idea about AWS Pricing but letting an Agent decide can drive your bill up.
-6. 
    
 
 - **Phidata Documentation**: [https://phidata.com](https://phidata.com)
