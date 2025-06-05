@@ -146,5 +146,5 @@ lambda_agent.print_response("Invoke the Lambda function named my-function.")
 - **boto3 Documentation**: [boto3 Docs](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
 
-**NOTE**: A freshman creates this repository. I believe some great opinions about this repo would lead me to learn & develop more.
+**NOTE**: A freshman creates this repository. I guess some great opinions about this repo would lead me to learn & develop more.
 ```
