@@ -1,6 +1,3 @@
-# AWS Agent with LangChain Implementation
-# This is a rewrite of the original phidata-based AWS agent using LangChain
-
 import os
 import boto3
 from typing import List, Dict, Any, Optional
@@ -13,11 +10,8 @@ from pydantic import BaseModel, Field
 import json
 from datetime import datetime
 
-# Load environment variables
 from dotenv import load_dotenv
 load_dotenv()
-
-# AWS Tools Implementation
 
 class EC2ListInstancesInput(BaseModel):
     """Input for EC2 list instances tool."""
@@ -58,8 +52,6 @@ class LambdaInvokeFunctionInput(BaseModel):
     """Input for Lambda invoke function tool."""
     function_name: str = Field(description="Name of the Lambda function to invoke")
     payload: Optional[Dict[str, Any]] = Field(default=None, description="Payload to send to the function")
-
-# Custom AWS Tools
 
 class EC2ListInstancesTool(BaseTool):
     name: str = "ec2_list_instances"
@@ -242,20 +234,16 @@ class LambdaInvokeFunctionTool(BaseTool):
         except Exception as e:
             raise ToolException(f"Error invoking Lambda function {function_name}: {str(e)}")
 
-# AWS Agent Class
-
 class AWSAgent:
     def __init__(self, region_name: str = "us-east-1", model_name: str = "llama-3.3-70b-versatile"):
         self.region_name = region_name
         
-        # Initialize LLM
         self.llm = ChatGroq(
             model=model_name,
             temperature=0,
             api_key=os.getenv("GROQ_API_KEY")
         )
         
-        # Initialize tools
         self.ec2_tools = [
             EC2ListInstancesTool(region_name),
             EC2StartInstanceTool(region_name),
@@ -272,8 +260,7 @@ class AWSAgent:
             LambdaListFunctionsTool(region_name),
             LambdaInvokeFunctionTool(region_name)
         ]
-        
-        # Create specialized agents
+    
         self.ec2_agent = self._create_agent(
             self.ec2_tools,
             "AWS EC2 Management Agent",
@@ -312,7 +299,6 @@ class AWSAgent:
             Help users understand function invocation results."""
         )
         
-        # Create a unified agent with all tools
         all_tools = self.ec2_tools + self.s3_tools + self.lambda_tools
         self.unified_agent = self._create_agent(
             all_tools,
@@ -359,16 +345,13 @@ class AWSAgent:
         """Execute any AWS command using the unified agent"""
         return self.unified_agent.invoke({"input": command})["output"]
 
-# Example Usage and Main Function
 
 def main():
-    # Initialize the AWS Agent
     agent = AWSAgent(region_name=os.getenv("AWS_REGION", "us-east-1"))
     
     print("AWS Agent with LangChain - Ready!")
     print("=" * 50)
     
-    # Example commands
     examples = [
         "List all EC2 instances",
         "List all S3 buckets",
@@ -384,7 +367,6 @@ def main():
     
     print("\n" + "=" * 50)
     
-    # Interactive mode
     while True:
         try:
             user_input = input("\nEnter your AWS command (or 'quit' to exit): ").strip()
