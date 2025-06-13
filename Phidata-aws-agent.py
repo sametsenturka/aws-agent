@@ -5,10 +5,7 @@ from s3tool import S3Tool
 from dotenv import load_dotenv
 from phi.model.groq import Groq
 
-# load GROQ_API_KEY and your AWS Credentials Setup
 load_dotenv()
-
-# AWSLambda Tool is provided by phidata
 
 EC2_agent = Agent(
     tools=[EC2Tool(region_name="your_region_name")],
